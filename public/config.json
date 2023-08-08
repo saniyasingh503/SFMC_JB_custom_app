@@ -26,28 +26,29 @@
         "timeout": 10000
       }
     },
-    "configurationArguments": {
-      "save": {
-        "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/save",
-        "verb": "POST",
-        "useJwt": true
-      },
-      "publish": {
-        "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/publish",
-        "verb": "POST",
-        "useJwt": true
-      },
-      "stop": {
-        "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/stop",
-        "verb": "POST",
-        "useJwt": true
-      },
-      "validate": {
-        "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/validate",
-        "verb": "POST",
-        "useJwt": true
-      }
+  "configurationArguments": {
+      "applicationExtensionKey": "5779e086-55d4-4426-a94f-6f173881fd41",
+    "save": {
+      "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/save",
+      "verb": "POST",
+      "useJwt": true
     },
+    "publish": {
+      "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/publish",
+      "verb": "POST",
+      "useJwt": true
+    },
+    "stop": {
+      "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/stop",
+      "verb": "POST",
+      "useJwt": true
+    },
+    "validate": {
+      "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/validate",
+      "verb": "POST",
+      "useJwt": true
+    }
+  },
     "wizardSteps": [
         { "label": "Configure Activity", "key": "step1" }
     ],
