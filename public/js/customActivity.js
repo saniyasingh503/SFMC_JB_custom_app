@@ -14,8 +14,8 @@ define([
     connection.on('requestedTokens', onGetTokens);
     connection.on('requestedEndpoints', onGetEndpoints);
     connection.on('requestedInteraction', onRequestedInteraction);
-    connection.on('requestedTriggerEventDefinition', onRequestedTriggerEventDefinition);
-    connection.on('requestedDataSources', onRequestedDataSources);
+    //connection.on('requestedTriggerEventDefinition', onRequestedTriggerEventDefinition);
+    //connection.on('requestedDataSources', onRequestedDataSources);
 
     connection.on('clickedNext', save);
    
@@ -65,7 +65,14 @@ define([
 
         $.each(inArguments, function (index, inArgument) {
             $.each(inArgument, function (key, val) {
-                
+                if (key === 'postcardURL') {
+                    $('#postcard-urt').val(val);
+                    $('.postcard - preview - content').css('background - image', "url('" + $('#postcard-image').val()); 
+                }
+
+                if (key === "postcardText")
+                    $('#postcard-text').val(val);
+                    $('#postcard-preview-text').html($('#postcard - text').val());
               
             });
         });
@@ -100,5 +107,9 @@ define([
         connection.trigger('updateActivity', payload);
     }
 
+    $('#btn-preview').click(function () {
+        $('#postcard-preview-text').html($('#postcard-text').val());
+        $('#postcard-preview-content').css('background-image',"url('" + $('#postcard-url').val() + "')");
+    });
 
 });
