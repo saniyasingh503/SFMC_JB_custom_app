@@ -17,7 +17,7 @@
       "execute": {
         "inArguments": [],
         "outArguments": [],
-        "url": "https://sfmc-jb-custom-app.vercel.app/activity/execute",
+        "url": "https://${process.env.sfmc-jb-custom-app}.vercel.app/execute",
         "verb": "POST",
         "body": "",
         "header": "",
@@ -29,22 +29,22 @@
   "configurationArguments": {
       "applicationExtensionKey": "5779e086-55d4-4426-a94f-6f173881fd41",
     "save": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/save",
+      "url": "https://${process.env.sfmc-jb-custom-app}.vercel.app/save",
       "verb": "POST",
       "useJwt": true
     },
     "publish": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/publish",
+      "url": "https://${process.env.sfmc-jb-custom-app}.vercel.app/publish",
       "verb": "POST",
       "useJwt": true
     },
     "stop": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/stop",
+      "url": "https://${process.env.sfmc-jb-custom-app}.vercel.app/stop",
       "verb": "POST",
       "useJwt": true
     },
     "validate": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/validate",
+      "url": "https://${process.env.sfmc-jb-custom-app}.vercel.app/validate",
       "verb": "POST",
       "useJwt": true
     }
