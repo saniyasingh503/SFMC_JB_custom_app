@@ -11,7 +11,7 @@ define([
     var lastStepEnabled = false;
     var steps = [{ "label": "Configure Postcard", "key": "step1" }];
 
-    var currentStep = step[0].key;
+    var currentStep = steps[0].key;
 
     $(window).ready(onRender);
 
