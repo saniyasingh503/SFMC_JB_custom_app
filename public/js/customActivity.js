@@ -70,9 +70,9 @@ define([
 
         $.each(inArguments, function (index, inArgument) {
             $.each(inArgument, function (key, val) {
-                if (key === 'postcardURL') {
-                    $('#postcard-urt').val(val);
-                    $('.postcard - preview - content').css('background - image', "url('" + $('#postcard-image').val()); 
+               if (key === 'postcardURL') {
+                    $('#postcard-url').val(val);
+                    $('.postcard - preview - content').css('background - image', "url('" + $('#postcard-url').val()); 
                 }
 
                 if (key === "postcardText")
