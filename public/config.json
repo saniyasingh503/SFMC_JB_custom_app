@@ -17,7 +17,7 @@
       "execute": {
         "inArguments": [],
         "outArguments": [],
-        "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/execute",
+        "url": "https://${process.env.sfmc-jb-custom-app}/journeybuilder/execute",
         "verb": "POST",
         "body": "",
         "header": "",
@@ -29,22 +29,22 @@
   "configurationArguments": {
       "applicationExtensionKey": "5779e086-55d4-4426-a94f-6f173881fd41",
     "save": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/save",
+      "url": "https://${process.env.sfmc-jb-custom-app}/journeybuilder/save",
       "verb": "POST",
       "useJwt": true
     },
     "publish": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/publish",
+      "url": "https://${process.env.sfmc-jb-custom-app}/journeybuilder/publish",
       "verb": "POST",
       "useJwt": true
     },
     "stop": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/stop",
+      "url": "https://${process.env.sfmc-jb-custom-app}/journeybuilder/stop",
       "verb": "POST",
       "useJwt": true
     },
     "validate": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/validate",
+      "url": "https://${process.env.sfmc-jb-custom-app}/journeybuilder/validate",
       "verb": "POST",
       "useJwt": true
     }
