@@ -17,7 +17,7 @@
       "execute": {
         "inArguments": [],
         "outArguments": [],
-        "url": "https://${process.env.sfmc-jb-custom-app}.vercel.app/execute",
+        "url": "https://${process.env.sfmc-jb-custom-app}.heroku.com/execute",
         "verb": "POST",
         "body": "",
         "header": "",
@@ -29,22 +29,22 @@
   "configurationArguments": {
       "applicationExtensionKey": "5779e086-55d4-4426-a94f-6f173881fd41",
     "save": {
-      "url": "https://${process.env.sfmc-jb-custom-app}.vercel.app/save",
+      "url": "https://${process.env.sfmc-jb-custom-app}.heroku.com/save",
       "verb": "POST",
       "useJwt": true
     },
     "publish": {
-      "url": "https://${process.env.sfmc-jb-custom-app}.vercel.app/publish",
+      "url": "https://${process.env.sfmc-jb-custom-app}.heroku.com/publish",
       "verb": "POST",
       "useJwt": true
     },
     "stop": {
-      "url": "https://${process.env.sfmc-jb-custom-app}.vercel.app/stop",
+      "url": "https://${process.env.sfmc-jb-custom-app}.heroku.com/stop",
       "verb": "POST",
       "useJwt": true
     },
     "validate": {
-      "url": "https://${process.env.sfmc-jb-custom-app}.vercel.app/validate",
+      "url": "https://${process.env.sfmc-jb-custom-app}.heroku.com/validate",
       "verb": "POST",
       "useJwt": true
     }
