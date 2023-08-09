@@ -18,7 +18,7 @@
       "execute": {
         "inArguments": [],
         "outArguments": [],
-        "url": "https://${process.env.sfmc-jb-custom-app}.heroku.com/execute",
+        "url": "https://sfmc-jb-custom-app-163f81526a96.herokuapp.com/execute",
         "verb": "POST",
         "body": "",
         "header": "",
@@ -30,22 +30,22 @@
   "configurationArguments": {
       "applicationExtensionKey": "5779e086-55d4-4426-a94f-6f173881fd41",
     "save": {
-      "url": "https://${process.env.sfmc-jb-custom-app}.heroku.com/save",
+      "url": "https://sfmc-jb-custom-app-163f81526a96.herokuapp.com/save",
       "verb": "POST",
       "useJwt": true
     },
     "publish": {
-      "url": "https://${process.env.sfmc-jb-custom-app}.heroku.com/publish",
+      "url": "https://sfmc-jb-custom-app-163f81526a96.herokuapp.com/publish",
       "verb": "POST",
       "useJwt": true
     },
     "stop": {
-      "url": "https://${process.env.sfmc-jb-custom-app}.heroku.com/stop",
+      "url": "https://sfmc-jb-custom-app-163f81526a96.herokuapp.com/stop",
       "verb": "POST",
       "useJwt": true
     },
     "validate": {
-      "url": "https://${process.env.sfmc-jb-custom-app}.heroku.com/validate",
+      "url": "https://sfmc-jb-custom-app-163f81526a96.herokuapp.com/validate",
       "verb": "POST",
       "useJwt": true
     }
