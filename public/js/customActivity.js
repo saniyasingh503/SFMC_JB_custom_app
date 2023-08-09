@@ -8,12 +8,17 @@ define([
     var connection = new Postmonger.Session();
     var authTokens = {};
     var payload = {};
+    var lastStepEnabled = false;
+    var steps = [{ "label": "Configure Postcard", "key": "step1" }];
+
+    var currentStep = step[0].key;
+
     $(window).ready(onRender);
 
     connection.on('initActivity', initialize);
     connection.on('requestedTokens', onGetTokens);
     connection.on('requestedEndpoints', onGetEndpoints);
-    connection.on('requestedInteraction', onRequestedInteraction);
+    //connection.on('requestedInteraction', onRequestedInteraction);
     //connection.on('requestedTriggerEventDefinition', onRequestedTriggerEventDefinition);
     //connection.on('requestedDataSources', onRequestedDataSources);
 
@@ -25,9 +30,9 @@ define([
 
         connection.trigger('requestTokens');
         connection.trigger('requestEndpoints');
-        connection.trigger('requestInteraction');
-        connection.trigger('requestTriggerEventDefinition');
-        connection.trigger('requestDataSources');  
+        //connection.trigger('requestInteraction');
+        //connection.trigger('requestTriggerEventDefinition');
+        //connection.trigger('requestDataSources');  
 
     }
 
@@ -98,7 +103,9 @@ define([
         var postcardTextValue = $('#postcard-text').val();
 
         payload['arguments'].execute.inArguments = [{
-            "tokens": authTokens
+            "tokens": authTokens,
+            "postcardText": postcardTextValue,
+            "postcardURL":postcardURLValue
         }];
         
         payload['metaData'].isConfigured = true;
