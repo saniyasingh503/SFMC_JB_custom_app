@@ -17,7 +17,7 @@
       "execute": {
         "inArguments": [],
         "outArguments": [],
-        "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/execute",
+        "url": "https://sfmc-jb-custom-app.vercel.app/activity/execute",
         "verb": "POST",
         "body": "",
         "header": "",
