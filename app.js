@@ -29,8 +29,8 @@ if ('development' == app.get('env')) {
 //app.post('/logout', routes.logout );
 
 app.get('/', routes.index );
-app.post('/client-requests', routes.client-requests);
-app.post('/activity', routes.activity );
+//app.post('/client-requests', routes.client-requests);
+app.post('/activity', activity );
 
 // Custom Hello World Activity Routes
 //app.post('/journeybuilder/save/', activity.save );
