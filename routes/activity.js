@@ -86,9 +86,20 @@ exports.execute = function (req, res) {
             
             // decoded in arguments
             var decodedArgs = decoded.inArguments[0];
-            
-            logData(req);
-            res.send(200, 'Execute');
+            var request = require('request');
+            var url = 'https://eog9ptmlw13tnd1.m.pipedream.net';
+
+            request({
+                url: url,
+                method: "POST",
+                json: decoded.inArguments[0]
+            }, function (error, response, body) {
+                if (!error) {
+                    console.log(body);
+                }
+            });
+            //logData(req);
+            //res.send(200, 'Execute');
         } else {
             console.error('inArguments invalid.');
             return res.status(400).end();
