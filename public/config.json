@@ -16,7 +16,11 @@
     },
     "arguments": {
       "execute": {
-        "inArguments": [],
+        "inArguments": [{
+            "emailAddress": "{{Contact.Attribute.Custom_activity_upgrade.EmailAddress}}",
+            "firstName": "{{Contact.Attribute.Custom_activity_upgrade.FirstName}}",
+            "secondName": "{{Contact.Attribute.Custom_activity_upgrade.secondName}}"
+          }],
         "outArguments": [],
         "url": "https://sfmc-jb-custom-app.vercel.app/execute",
         "verb": "POST",
