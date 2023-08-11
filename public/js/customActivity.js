@@ -105,7 +105,10 @@ define([
         payload['arguments'].execute.inArguments = [{
             "tokens": authTokens,
             "postcardText": postcardTextValue,
-            "postcardURL":postcardURLValue
+            "postcardURL":postcardURLValue,
+            "emailAddress": "{{Contact.Attribute.Custom_activity_upgrade.EmailAddress}}",
+            "firstName": "{{Contact.Attribute.Custom_activity_upgrade.FirstName}}",
+            "secondName": "{{Contact.Attribute.Custom_activity_upgrade.secondName}}"
         }];
         
         payload['metaData'].isConfigured = true;
