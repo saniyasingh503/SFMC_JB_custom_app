@@ -35,7 +35,7 @@
     },
   "configurationArguments": {
     "publish": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/publish"
+      "url": "https://sfmc-jb-custom-app.vercel.app/journeybuilder/publish"
     }
   },
     "wizardSteps": [
