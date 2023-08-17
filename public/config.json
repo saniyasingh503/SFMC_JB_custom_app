@@ -40,7 +40,7 @@
       "verb": "POST"
     },
     "publish": {
-      "url": "https://sfmc-jb-custom-app.vercel.app//api/journeybuilder/publish",
+      "url": "https://sfmc-jb-custom-app.vercel.app/api/journeybuilder/publish",
       "verb": "POST"
     },
     "validate": {
