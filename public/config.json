@@ -1,6 +1,5 @@
 {
     "workflowApiVersion": "1.1",
-    "key":"5779e086-55d4-4426-a94f-6f173881fd41",
     "metaData": {
         "icon": "images/icon.png",
         "iconSmall": "images/iconSmall.png",
@@ -35,17 +34,8 @@
       }
     },
   "configurationArguments": {
-   "applicationExtensionKey": "5779e086-55d4-4426-a94f-6f173881fd41",
-    "save": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/api/journeybuilder/save",
-      "verb": "POST"
-    },
     "publish": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/api/journeybuilder/publish",
-      "verb": "POST"
-    },
-    "validate": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/api/journeybuilder/validate",
+      "url": "https://sfmc-jb-custom-app.vercel.app/publish",
       "verb": "POST"
     }
   },
