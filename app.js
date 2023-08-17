@@ -29,14 +29,14 @@ if ('development' == app.get('env')) {
 //app.post('/logout', routes.logout );
 
 app.get('/', routes.index );
-//app.post('/client-requests', routes.client-requests);
+app.post('/client-requests', routes.client-requests);
 app.post('/activity', activity );
 
 // Custom Hello World Activity Routes
-//app.post('/journeybuilder/save/', activity.save );
-//app.post('/journeybuilder/validate/', activity.validate );
-//app.post('/journeybuilder/publish/', activity.publish );
-//app.post('/journeybuilder/execute/', activity.execute );
+app.post('/journeybuilder/save/', activity.save );
+app.post('/journeybuilder/validate/', activity.validate );
+app.post('/journeybuilder/publish/', activity.publish );
+app.post('/journeybuilder/execute/', activity.execute );
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
