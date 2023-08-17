@@ -24,7 +24,7 @@
           }
         ],
         "outArguments": [],
-        "url": "https://sfmc-jb-custom-app.vercel.app/api/journeybuilder/execute",
+        "url": "https://sfmc-jb-custom-app.vercel.app/execute",
         "verb": "POST",
         "body": "",
         "header": "",
