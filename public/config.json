@@ -8,21 +8,23 @@
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Template",
-          "description": "A Template for a custom Journey Builder activity",
+           "name": "Template",
+          "description": "A custom Journey Builder activity",
           "step1Label": "Configure Activity"
         }
-        
     },
     "arguments": {
       "execute": {
-        "inArguments": [{
+        "inArguments": [
+          {
             "emailAddress": "{{Contact.Attribute.Custom_activity_upgrade.EmailAddress}}",
             "firstName": "{{Contact.Attribute.Custom_activity_upgrade.FirstName}}",
             "secondName": "{{Contact.Attribute.Custom_activity_upgrade.secondName}}"
-          }],
+
+          }
+        ],
         "outArguments": [],
-        "url": "https://sfmc-jb-custom-app.vercel.app/execute",
+        "url": "https://sfmc-jb-custom-app.vercel.app/api/journeybuilder/execute",
         "verb": "POST",
         "body": "",
         "header": "",
@@ -32,24 +34,19 @@
       }
     },
   "configurationArguments": {
-      "applicationExtensionKey": "f8315adf-e1af-4b48-b221-f2dfd5db7edf",
+      "applicationExtensionKey": "5779e086-55d4-4426-a94f-6f173881fd41",
     "save": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/save",
+      "url": "https://sfmc-jb-custom-app.vercel.app/api/journeybuilder/save",
       "verb": "POST",
       "useJwt": true
     },
     "publish": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/publish",
-      "verb": "POST",
-      "useJwt": true
-    },
-    "stop": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/stop",
+      "url": "https://sfmc-jb-custom-app.vercel.app//api/journeybuilder/publish",
       "verb": "POST",
       "useJwt": true
     },
     "validate": {
-      "url": "https://sfmc-jb-custom-app.vercel.app/validate",
+      "url": "https://sfmc-jb-custom-app.vercel.app/api/journeybuilder/validate",
       "verb": "POST",
       "useJwt": true
     }
@@ -67,7 +64,31 @@
     "schema": {
         "arguments": {
             "execute": {
-                "inArguments": [],
+              "inArguments": [
+                {
+                  "EmailAddress": {
+                    "access": "Hidden",
+                    "dataType": "Text",
+                    "direction": "In",
+                    "isNullable": false,
+                    "readOnly": false
+                  },
+                  "FirstName": {
+                    "access": "Hidden",
+                    "dataType": "Text",
+                    "direction": "In",
+                    "isNullable": false,
+                    "readOnly": false
+                  },
+                  "LastName": {
+                    "access": "Hidden",
+                    "dataType": "Text",
+                    "direction": "In",
+                    "isNullable": false,
+                    "readOnly": false
+                  }
+                }
+              ],
                 "outArguments": []
             }
         }
