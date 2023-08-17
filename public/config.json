@@ -19,7 +19,7 @@
           {
             "emailAddress": "{{Contact.Attribute.Custom_activity_upgrade.EmailAddress}}",
             "firstName": "{{Contact.Attribute.Custom_activity_upgrade.FirstName}}",
-            "secondName": "{{Contact.Attribute.Custom_activity_upgrade.secondName}}"
+            "lastName": "{{Contact.Attribute.Custom_activity_upgrade.LastName}}"
 
           }
         ],
